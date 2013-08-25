@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Shamil C M</title>
+
+ 
+
+    <meta name="author" content="Your Inspiration Web - Nando [php, 
+xhtml, css], Sara [graphic design]" />
+
+    <meta name="keywords" content="single web page, single page website, 
+single page template, single page layout"
+
+    />
+
+ 	<meta name="description" content=""
+
+	/>
+
+    <meta http-equiv="Content-Type" content="text/html; 
+charset=iso-8859-1" />
+
+    
+
+    <!-- [template css] begin -->
+
+	<link rel="stylesheet" href="css/screen.css" type="text/css" 
+media="screen, projection" />
+
+	<link rel="stylesheet" href="css/960.css" type="text/css" 
+media="screen, projection" />
+
+    <link rel="stylesheet" href="css/print.css" type="text/css" 
+media="print" /> 
+
+    <!--[if IE]>
+
+        <link rel="stylesheet" href="css/ie.css" type="text/css" 
+media="screen, projection" />
+
+    <![endif]-->
+
+    <!-- [template css] end -->
+
+    
+
+    <!-- [favicon] begin -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+	<!-- [favicon] end -->
+
+	
+
+	<!-- Some hacks for the dreaded IE6 ;) -->
+
+    <!--[if lt IE 7]>
+
+        <link rel="stylesheet" href="css/ie6.css" type="text/css" 
+media="screen" />
+
+        <script type="text/javascript">
+
+            var clear="images/clear.gif";
+
+        </script>
+
+        <script type="text/javascript" src="js/unitpngfix.js"></script>
+
+    <![endif]-->
+
+    
+
+	<script type="text/javascript" 
+src="js/mootools-yui-compressed.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script> 
+
+    <script type="text/javascript" 
+charset="utf-8">jQuery.noConflict();</script>
+
+    
+
+    <!-- START FANCYZOOM -->
+
+    <script type="text/javascript" src="js/fancyzoom.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+
+        document.addEvent('domready', function() {
+
+          $$("div.photo a").each(function(el) { 
+
+            new FancyZoom(el, {
+
+              scaleImg:true,
+
+              onShow: function(e) {
+
+                var fancy = this
+
+                var a = fancy.content_div.getElement('a')
+
+                if(a && a.getElement('.loading')) {
+
+                  var loaded = function() {
+
+                    fancy.loaded = true
+
+                    fancy.options.width = this.width
+
+                    fancy.options.height = this.height
+
+                    a.empty().adopt(this)
+
+                    FancyZoom.show(e)
+
+                  }
+
+                  var image = new Image()
+
+                  image.onload = loaded
+
+                  image.src = a.href
+
+                }
+
+              },
+
+              max: 700
+
+            })
+
+          })
+
+        });
+
+    </script>
+
+    <!-- END FANCYZOOM -->
+
+
+
+    <!-- START SCROLL -->
+
+	<script src="js/scroll.js" type="text/javascript"></script>
+
+	<!-- END SCROLL -->
+
+	
+
+	<!-- START CUFON -->
+
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+
+	<script type="text/javascript" 
+src="js/dustismo_400.font.js"></script>
+
+	<script type="text/javascript">
+
+       Cufon.replace('h1,ul#nav,h2,h4', {
+
+           hover: true,
+
+           fontFamily: 'dustismo' 
+
+       });
+
+    </script>
+
+	<!-- END CUFON -->
+
+	
+
+	<!-- START VALIDATE FORM CONTACT -->
+
+	<script type="text/javascript" 
+src="js/form-contact-validate.js"></script>
+
+	<!-- END VALIDATE FORM CONTACT -->
+
+</head>
+
+
+
+<body id="home-page">
+
+	
+
+	<!-- START TOP FADE -->
+
+    <div class="top-bg">&nbsp;</div>
+
+    <!-- END TOP FADE -->
+
+    
+
+    <!-- START BOTTOM FADE -->
+
+    <div class="bottom-bg">&nbsp;</div>
+
+    <!-- END BOTTOM FADE -->
+
+    
+
+    <!-- START HEADER -->
+
+    <div class="container_12">
+
+        
+
+        <!-- START NAVIGATION SECTION -->
+
+        <div class="grid_3 alpha">
+
+        
+
+            <div class="fixed-column">
+
+                
+
+                <!-- START LOGO -->
+
+                <a href="index.htm" title="home page">
+
+                    <img src="images/logo.png" alt="logo" class="logo" 
+/>
+
+                </a>
+
+                <!-- END LOGO -->
+
+                
+
+                <!-- START NAV -->
+
+                <ul id="nav">
+
+                  
+                    <li><a href="#about-page" 
+title="about">about</a></li>
+
+                    <li><a href="#portfolio-page" 
+title="portfolio">projects</a></li>
+                    <li><a href="#contact-page" 
+title="contati">contact</a></li>
+
+                    <li><a href="http://codecapture.wordpress.com" 
+title="blog" target="_blank">blog</a></li>
+           <li><a href="resume.pdf" 
+title="resume">cv</a></li>
+
+
+                </ul>
+
+                <!-- END NAV -->
+
+                
+
+                <!-- START FOLLOW ME -->
+
+                <a href="#" title="follow me on twitter">
+
+                 
+
+                </a>
+
+                <!-- END FOLLOW ME -->
+
+                
+
+                <!-- START SEND ME AN EMAIL 
+
+                <a href="mailto:info@example.com" title="Send me an 
+email">
+
+                    <img src="images/send-mail.gif" alt="send mail" />
+
+                </a>
+
+                <!-- END SEND ME AN EMAIL -->
+
+                
+
+                <!-- START ADD ME ON SKYPE 
+
+                <a href="#" title="Add me on Skype">
+
+            
+
+                </a>
+
+                <!-- END ADD ME ON SKYPE -->
+
+                
+
+                <!-- DO NOT REMOVE: START CREDITS -->
+
+                <div class="credits" style="text-align:center;">
+
+                    <!--<a rel="license" 
+href="http://creativecommons.org/licenses/by/2.5/it/"><img alt="Creative 
+Commons License" style="border-width:0" 
+src="http://i.creativecommons.org/l/by/2.5/it/80x15.png" /></a><br 
+/><span xmlns:dc="http://purl.org/dc/elements/1.1/" 
+property="dc:title">Your Inspiration Folio</span> by <a 
+xmlns:cc="http://creativecommons.org/ns#" 
+href="http://www.yourinspirationweb.com" property="cc:attributionName" 
+rel="cc:attributionURL">Your Inspiration Web</a> is licensed under a <a 
+rel="license" 
+href="http://creativecommons.org/licenses/by/2.5/it/">Creative Commons 
+Attribuzione 2.5 Italia License</a>.--> <a href="http://www.freedomain.co.nr/" target="_blank" title="Free Domain Registration"><img src="http://nezaa.imdrv.net/997/7.gif" width="88" height="31" border="0" alt="Free Domain Registration" /><br/></a>Template by
+
+                    <a 
+href="http://www.yourinspirationweb.com/en/free-website-template-present-your-portfolio-online-in-a-single-webpage/" 
+title="The Community of Inspiration Dedicated to Webdesign">
+
+                         YIW
+
+                    </a>
+
+                </div>
+
+                <!-- END CREDITS -->
+
+    
+
+            </div>
+
+        
+
+        </div>
+
+        <!-- END NAVIGATION SECTION -->
+
+        
+
+        <div class="grid_9 omega right-column">
+
+        
+
+     
+
+            
+
+            <!-- START ABOUT PAGE -->
+
+            <a id="about-page"></a>
+
+            
+
+            <div class="about">
+
+                    
+
+                <div class="grid_5 alpha">
+
+                
+
+                    <div class="container-about">
+
+                        <h2>About</h2>
+
+                        
+
+                        <p>
+
+                            I'm currently a 3rd year B.Tech (Computer Science and Engineering) student of National Institute Of Technology, Calicut.
+<br/>My areas of interests are Algorithms, Data Management and Designing. <br/> 
+
+
+                        </p>
+
+                        
+
+                
+
+                        
+
+
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- START AVATAR -->
+
+                <div class="grid_4 omega avatar-image">
+
+                    <img src="images/avatar.jpg" alt="avatar" 
+class="avatar" />
+
+                </div>
+
+                <!-- END AVATAR -->
+
+                
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="about-bottom-bg"></div>
+
+            <!-- END ABOUT PAGE -->
+
+            
+
+            <!-- START PORTFOLIO PAGE -->
+
+            <a id="portfolio-page"></a>
+
+            
+
+            <div class="portfolio">
+
+            	<div class="grid_4 alpha">
+
+	                <div class="container-portfolio">
+
+	                    <h2>Projects</h2>
+
+                    </div>
+
+                </div>
+
+                
+
+                <!-- START PORTFOLIO QUOTE -->
+
+                <div class="grid_4 omega">
+
+                	<!--<div class="portfolio-quote">
+
+                		<h4> </h4>
+
+                	</div>-->
+
+                </div>
+
+                <!-- END PORTFOLIO QUOTE -->
+
+                
+
+                <div class="clear"></div>
+
+                
+
+                <div class="container-portfolio">
+
+                    
+
+                    <!-- START THUMB IMAGE -->
+                    <div>
+                    
+                           <h4>Virtualization in the Cloud</h4>
+                        
+<i>Ongoing</i><br/>
+		  
+Working on a project to provide Infrastructure as a Service(IaaS) in NIT Calicut using open source software like <b>Eucalyptus</b> and <b>Rocks</b>.   
+
+    
+                      <br/><br/>     <h4>SIL Compiler</h4>
+                       
+<i>September - October, 2011</i><br/>
+<i>Compiler Lab </i><br/>		  
+Programmed a compiler for Simple and Strongly typed Integer Language(SIL) running on a  simulator based on MIPS Architecture, using tools like <b>LEX</b> and <b>YACC</b><br/>
+Github Page:    <a href="http://github.com/shamilcm/silcompiler"> github.com/shamilcm/silcompiler</a><br/> </div>
+               
+
+<br/>
+
+
+
+
+        <div class="photo">
+
+                        <a href="#project01">
+                           <h4>Stock Simulator (Bulls n' Bears)</h4>
+                        </a> 
+<i>September, 2011</i><br/>
+		  
+Built an online stock market simulation game using <b>PHP, MySQL , jQuery and HTML/CSS</b> for Tathva 2011 (All India Techno-Management Symposium) of NIT Calicut. The game was up for a period of one month (September 21st to October 21st) had over 1000 participants.<br/>
+                    </div>
+
+                    
+<br/>
+
+         
+
+
+                    <div class="photo">
+
+                        <a href="#project02">
+
+                           <h4>Open Source Social Network (Wireus)</h4>
+                        </a><i>February - March, 2011</i><br/><i> Database Management Systems Project</i><br/>
+		  Conceptualized and designed a basic social network using <b>PHP, postgreSQL, HTML/CSS and Javascript</b> having features like messaging, status updation, photo sharing etc.  </div>	
+Project Page:<a href="http://github.com/shamilcm/wireus"> github.com/shamilcm/wireus</a><br/>
+Demo:<a href="http://athena.nitc.ac.in/~b090084cs"> athena.nitc.ac.in/~b090084cs</a>
+                   
+
+                    <div>
+<br/>     <h4>Portal for Education & Research Department at Infosys, Trivandrum </h4>
+                       
+<i>April - May , 2007</i><br/>	  
+Worked on a student project to build a portal for Education & Research Department at Infosys Trivandrum using <b>ASP.NET and C#</b>. The project was accepted and was used in Infosys Intranet(Sparsh).
+<br/>
+
+                    </div>
+
+
+
+                  
+
+                    
+
+                    <div class="clear"></div>
+
+                    <!-- END SMALL IMAGE -->
+
+                    
+
+                    <!-- START BIG IMAGE -->
+
+                    <div id="project01">
+
+                        <a 
+href="images/portfolio/003.big.jpg#project01">
+
+                            <img src="images/fancyzoom/loading.gif" 
+alt="loading" class="loading" />
+
+                        </a>
+
+                        <p class="foto_caption"><strong>Bulls n' Bears:</strong> Stock market simulation game for Tathva '11 - Technical Fest NIT Calicut</p>
+
+                    </div>
+
+                    
+
+                    <div id="project02">
+
+                        <a 
+href="images/portfolio/001.big.jpg#project02">
+
+                            <img src="images/fancyzoom/loading.gif" 
+alt="loading" class="loading" />
+
+                        </a>
+
+                        <p class="foto_caption">Wireus - Open Source Social Network</p>
+
+                    </div>
+
+                    
+
+              
+
+                    <!-- END BIG IMAGE -->
+
+
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-bottom-bg"></div>
+
+            <!-- END PORTFOLIO PAGE -->
+
+            
+
+            <!-- START CONTACT PAGE -->
+
+            <a id="contact-page"></a>
+
+            
+
+            <div class="contact">
+
+            
+
+                <div class="grid_5 alpha">
+
+                    
+
+                    <div class="container-contact">
+
+                        <h2>Contact</h2>
+
+                        
+
+                        <div id="log"></div>
+
+                        <br/>
+<h4>shamil.cm@gmail.com</h4>
+ <h4>   <span>Tel.</span> 91 - 9961056990<br/></h4>
+<p>Twitter: <a title="Twitter" href="http://twitter.com/shamilcm">@shamilcm<br />
+</a><span class="Apple-style-span" style="color:#0783b6;font-family:Arial, sans-serif;font-size:10px;line-height:normal;"> </span><span class="Apple-style-span" style="color:#0783b6;font-family:Arial, sans-serif;font-size:10px;line-height:normal;"><a style="text-decoration:none;" href="http://in.linkedin.com/pub/shamil-cm/34/56a/981"><img style="vertical-align:middle;" src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" alt="View Shamil CM's LinkedIn profile" width="20" height="15" border="0" />View </a></span><span class="Apple-style-span" style="color:#0783b6;font-family:Arial, sans-serif;font-size:10px;line-height:normal;"><a style="text-decoration:none;" href="http://in.linkedin.com/pub/shamil-cm/34/56a/981">Shamil CM&#8217;s profile</a></span></p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="grid_4 omega contact-info">
+
+
+
+                    
+
+                 <br/><br/>
+
+                    
+
+                    <h3 style="text-align:right;">Address</h3>
+
+                    
+
+                    <address>G - 442 <br/> National Institute Of Technology, Calicut <br/>Kozhikode - 673601<br/></address>
+
+                    
+
+                    <p class="right">
+
+                    
+
+              
+
+                    </p>
+
+                </div>
+
+                
+
+                <div class="clear"></div>
+
+            </div>
+
+            
+
+            <div class="contact-bottom-bg"></div>
+
+            <!-- END CONTACT PAGE -->
+
+            
+
+        </div>
+
+        
+
+        <div class="clear"></div>
+
+    </div>
+
+    
+
+	<!--[if IE]>
+
+      <script type="text/javascript"> Cufon.now(); </script>
+
+    <![endif]-->  
+
+</body>
+
+</html>
