@@ -42,8 +42,8 @@ p img.left { float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
 
 /* Link */
-a { color:#009; text-decoration:none;}
-a:link, a:visited { color: #009; text-decoration: none; }
+a { color:#a61607; text-decoration:none;}
+a:link, a:visited { color:#a61607 ; text-decoration: none; }
 a:active, a:hover { color: #621303; text-decoration: underline }
 
 
@@ -136,7 +136,7 @@ ul#nav li a:hover,ul#nav li a:active {color:#a61607;text-decoration:none;}
 .container-about {padding:15px 0 30px 30px;}
 .container-about p span {color:#901003;}
 .avatar-image,.contact-info {width:180px!important;}
-img.avatar {margin:84px 0 0 30px;}
+img.avatar {margin:44px 0 0 30px;}
 /*end about*/
 
 /*************************************************
@@ -179,7 +179,12 @@ img.contact-logo {margin:30px 0 10px 105px;}
 /*************************************************
 /*heading*/
 /*************************************************/
-.home h1, h2, h3, h4 {font-size:450%;font-family:"century gothic";font-weight:normal;text-align:center;padding:0.5em;margin:0;word-spacing:-5px;letter-spacing:-3px;color:#663333;}
+
+.home h1, h2, h3, h4 {font-size:450%;font-family:"century gothic";font-weight:normal;text-align:center;padding:0.5em;margin:0;word-spacing:-5px;letter-spacing:-3px;color:#a61607;}
+.home a{
+	color:#a61607;
+}
+
 .home h1 span {color:#a61607;}
 h2 {text-align:left;font-size:450%;padding:0;color:#a61607;}
 h3 {text-align:left;font-size:250%;padding:0;color:#a61607; font-family:"century gothic";}
