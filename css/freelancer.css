@@ -430,6 +430,7 @@ footer .footer-below {
 .profile {
     border-radius:50%;
     width:300px;
+    height:300px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 
